@@ -1,0 +1,21 @@
+import * as types from './type'
+// import { mapMutations } from 'vuex'
+
+import Vue from 'vue'
+export default {
+  signin ({commit}, user) {
+    console.log(user);
+    // return  Vue.http.get(`/movie/hot/?city=${city.rN}`).then((response) => {
+    //  let data = response.data
+    //  let lists = data.data.data.returnValue
+    //  //模拟索引数据的id号
+    //  lists.forEach((item, index) => {
+    //    item.mID = index
+    //  })
+    // 	city.data  = lists
+    Vue.http.get('');
+    commit(types.SIGN_IN, user)
+    // })
+  }
+
+}

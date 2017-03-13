@@ -1,0 +1,23 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+import userMutations from './user/mutations'
+import userAcions from './user/actions'
+
+Vue.use(Vuex);
+
+const user = {
+  state: {
+    username: '',
+    password: '',
+  },
+  actions: userAcions,
+  mutations: userMutations,
+}
+
+
+export default new Vuex.Store({
+  modules: {
+    user,
+  }
+})
+
